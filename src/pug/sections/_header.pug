@@ -4,7 +4,7 @@ header.header
 			a(href="index.html").logo
 				img(src="./img/logo.webp", alt="logo")
 			
-			a(href="#!").btn News
+			a(href="#!").btn-slim News
 			//===burger for mob menu ===
 			.menu-toggle#menu-toggle
 				span
@@ -23,3 +23,130 @@ header.header
 				li
 					a(href="") NEWS
 
+main.main-page
+	section.new-games
+		.container
+			h2.h2 New Games
+			.filter-block 
+				
+				.mySelect
+					.mySelect-icon
+					.mySelect-input All games
+						//- .selectValue(type='text' readonly='' value='')
+					ul.mySelect-drop
+						li.mySelect-options
+							p.mySelect-options__value(data-filter="all") All games
+							span 40
+						li.mySelect-options
+							p.mySelect-options__value(data-filter=".role") Role Playing
+							span 10
+						li.mySelect-options
+							p.mySelect-options__value(data-filter=".action") Action
+							span 12
+						li.mySelect-options
+							p.mySelect-options__value(data-filter=".strg") Strategy
+							span 15
+						li.mySelect-options
+							p.mySelect-options__value(data-filter=".war") War Gamestext
+							span 8
+
+			.game-cards#mixGameCards
+				
+				//===== card =====
+				.game-card.mix.war
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.war
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.role
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.strg
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.action
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.war
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+				//===== card =====
+				.game-card.mix.strg
+					.game-card__img
+						img(src="./img/img.webp", width="400" alt="img")
+					
+					.game-card__text
+						.h3 Age of Empires 4
+						p Blasphemous 2 is a single-player side-scrolling game featuring a Gothic landscape. It is developed by …
+					
+					.game-card__footer
+						a(href="#!").text-link Show more
+						a(href="#!").btn Play Now
+
+footer.footer
+	nav.footer-menu
+		a(href='politicy' target='_blank') Privacy Policy
+		a(href='contacts' target='_blank') Contact Us
+		a(href='about' target='_blank') About
+		a(href='mmoXgames.com' target='_blank') mmoXgames.com 
+	p (©) 2023

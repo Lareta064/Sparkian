@@ -1,0 +1,123 @@
+.game-cards{
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap:15px;
+	row-gap: 20px;
+	@media (max-width: 991px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (max-width: 599px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+.game-card{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0.625rem;
+	border-radius: 0.9375rem;
+	border: 0.125rem solid #3f3351;
+	background-color: #3f3351;
+	padding: 1.25rem;
+	max-width: 360px;
+	margin:0 auto;
+	.h3{
+		color: #fec260;
+		font-weight: 500;
+		margin-bottom: 0.625rem;
+	}
+	p{
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-weight: 400;
+		color: #f4eee0;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3;
+		overflow: hidden;
+	}
+	.game-card__img{
+		height: 240px;
+		border-radius: 0.625rem;
+		margin-bottom: 15px;
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0.625rem;
+		}
+	}
+		.game-card__footer{
+			margin-top: 30px;
+			a{display: block;};
+			a+a{margin-top: 12px;}
+		}
+}
+
+.footer {
+	height: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background: #000;
+	text-align: center;
+	line-height: 40px;
+	font-size: 13px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px;
+	color: rgb(100, 100, 100);
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	box-sizing: content-box;
+}
+
+.footer .footer-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px;
+}
+
+.footer a {
+	color: #fff;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	white-space: nowrap;
+}
+
+.footer a:hover {
+	color: #fff;
+}
+@media (max-width: 767px) {
+	.footer {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			height: auto;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			line-height: 1.2;
+		}
+	
+		.footer .footer-menu {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+		}
+	}

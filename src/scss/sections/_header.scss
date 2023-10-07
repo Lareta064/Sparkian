@@ -2,8 +2,10 @@
 	height: 70px;
 	display: flex;
 	align-items: center;
-	.btn{
+	.btn-slim{
 		margin-left: auto;
+		text-transform: uppercase;
+		color:#1f1d36;
 		
 	}
 	.menu-toggle{
@@ -48,6 +50,7 @@
 		bottom: 0;
 		left: 0;
 		right: 0;
+		z-index: 10;
 		transform: translateX(110%);
 		transition: .5s;
 		&.active{transform: translateX(0);}
